@@ -1,6 +1,8 @@
+"use client"
 import { FaBook, FaRegClock,  } from "react-icons/fa";
 import { FaArrowUpRightFromSquare, FaDisplay, FaFilePen } from "react-icons/fa6"
 import Navbar from "./components/navbar";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -18,7 +20,7 @@ export default function Home() {
             Platform Chatbot AI menggunakan model OpenAi 4o-mini, siap membantu pekerjaan, tugas, atau hanya sekedar ngobrol
           </p>
           <div className="flex flex-row items-center justify-center pt-4 gap-5">
-            <button className="flex items-center gap-3 text-white py-3 px-7 bg-slate-800 rounded-4xl hover:underline hover:bg-slate-900">
+            <button onClick={() => { window.location = '/chat' }} className="flex items-center gap-3 text-white py-3 px-7 bg-slate-800 rounded-4xl hover:underline hover:bg-slate-900">
               Get Started <FaArrowUpRightFromSquare />
             </button>
             <button className="flex items-center gap-3 text-white bo py-3 px-7 bg-slate-800 rounded-4xl hover:underline hover:bg-slate-900">
@@ -63,7 +65,7 @@ export default function Home() {
 
               <FaFilePen className="text-xl "/>
               </div>
-              <p className="text-white text-2xl font-bold"> Membantu Pekerjaan</p>
+              <p className="text-white text-2xl font-boldgit"> Membantu Pekerjaan</p>
               <p className="text-gray-400 max-w-xs">Membantu menyelesaikan pekerjaan dengan lebih cepat melalui jawaban instan dan solusi yang langsung ke inti.</p>
             </div>
         </div>
