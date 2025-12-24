@@ -11,7 +11,7 @@ export default function Navbar() {
                          </Link>
                     </button>
                 </div>
-                <div className="flex justify-center items-center gap-4 flex-row">
+                <div className="flex justify-center max-md:hidden items-center gap-4 flex-row">
                     <button className="text-white text-lg hover:underline">
                         <Link href={"/chat"}>Chat</Link>
                     </button>

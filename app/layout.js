@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import Providers from "./providers";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,9 +23,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-xs overflow-x-hidden`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem="false">
-          {children}
-        </ThemeProvider>
+        <Providers>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem="false">
+            {children}
+          </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

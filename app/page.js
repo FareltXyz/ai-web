@@ -9,15 +9,15 @@ export default function Home() {
     <>
       <Navbar />
       <main className="w-screen h-screen bg-gray-950 min-h-75 flex justify-center items-center">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-6xl text-white text-center font-extrabold">
+        <div className="flex flex-col p-4 justify-center items-center">
+          <h1 className="text-6xl max-md:text-5xl text-white text-center font-extrabold">
              AI - Asli Ini 
           </h1>
-          <h2 className="text-4xl text-white text-center font-bold">
+          <h2 className="text-4xl max-md:max-w-sm max-md:text-2xl text-white text-center font-bold">
              Chat AI Santai, Cepat, dan Beneran Ngebantu
           </h2>
-          <p className="text-xl text-gray-400 text-center max-w-xl">
-            Platform Chatbot AI menggunakan model OpenAi 4o-mini, siap membantu pekerjaan, tugas, atau hanya sekedar ngobrol
+          <p className="text-xl max-md:max-w-sm max-md:text-lg text-gray-400 text-center max-w-xl">
+            Platform Chatbot AI menggunakan model Google Genai Gemini 2.5-flash lite, siap membantu pekerjaan, tugas, atau hanya sekedar ngobrol
           </p>
           <div className="flex flex-row items-center justify-center pt-4 gap-5">
             <button onClick={() => { window.location = '/chat' }} className="flex items-center gap-3 text-white py-3 px-7 bg-slate-800 rounded-4xl hover:underline hover:bg-slate-900">
@@ -38,7 +38,7 @@ export default function Home() {
             <div className="max-w-2xl">
               <p className="text-gray-400 text-lg text-center max-lg:max-w-xs">
                 dirancang untuk bekerja cepat dan efisien.
-                Didukung model OpenAI 4o-mini, AI ini memberikan respons instan langsung dari browser tanpa perlu instalasi.
+                Didukung model Google Genai Gemini 2.5-flash lite, AI ini memberikan respons instan langsung dari browser tanpa perlu instalasi.
                 Cocok untuk membantu menyelesaikan berbagai tugas harian dengan lebih cepat dan praktis.
               </p>
             </div>
@@ -50,7 +50,7 @@ export default function Home() {
               <FaRegClock className="text-xl "/>
               </div>
               <p className="text-white text-2xl font-bold"> Cepat & Responsif</p>
-              <p className="text-gray-400 max-w-xs">Jawaban instan karena ditenagai OpenAI 4o-mini — ringan, ngebut, tanpa nunggu lama.</p>
+              <p className="text-gray-400 max-w-xs">Jawaban instan karena ditenagai Google Genai Gemini 2.5-flash lite — ringan, ngebut, tanpa nunggu lama.</p>
             </div>
             <div className="flex flex-col items-start justify-start gap-4 h-48">
               <div className="bg-slate-900 p-3 rounded-md">

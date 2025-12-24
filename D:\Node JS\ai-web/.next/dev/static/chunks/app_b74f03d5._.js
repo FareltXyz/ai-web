@@ -14,11 +14,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Navbar() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "1750c06f51f40cd386a26c0e4fbbc3d758abdf911d99de367028ab9e5755a6ed") {
+    if ($[0] !== "e1118e633571d9a0cb805203dc83876410fc6147e93464cbc2f0fd813f11c3d0") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1750c06f51f40cd386a26c0e4fbbc3d758abdf911d99de367028ab9e5755a6ed";
+        $[0] = "e1118e633571d9a0cb805203dc83876410fc6147e93464cbc2f0fd813f11c3d0";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -72,7 +72,7 @@ function Navbar() {
     let t2;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex justify-center items-center gap-4 flex-row",
+            className: "flex justify-center max-md:hidden items-center gap-4 flex-row",
             children: [
                 t1,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -83,12 +83,12 @@ function Navbar() {
                     }, void 0, false, {
                         fileName: "[project]/app/components/navbar.js",
                         lineNumber: 27,
-                        columnNumber: 134
+                        columnNumber: 148
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/navbar.js",
                     lineNumber: 27,
-                    columnNumber: 79
+                    columnNumber: 93
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     className: "text-white text-lg hover:underline",
@@ -96,7 +96,7 @@ function Navbar() {
                 }, void 0, false, {
                     fileName: "[project]/app/components/navbar.js",
                     lineNumber: 27,
-                    columnNumber: 169
+                    columnNumber: 183
                 }, this)
             ]
         }, void 0, true, {
@@ -190,11 +190,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Home() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "10faa1af5740fe0e3c0250163b0d0aaf8c170e27c6b6c0f4c8cf13ef58564cc1") {
+    if ($[0] !== "02f3a0578d3eac7c218ced0b317aa0e2a402cacbb5a195eacdd18d0acc0bcd17") {
         for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "10faa1af5740fe0e3c0250163b0d0aaf8c170e27c6b6c0f4c8cf13ef58564cc1";
+        $[0] = "02f3a0578d3eac7c218ced0b317aa0e2a402cacbb5a195eacdd18d0acc0bcd17";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -212,7 +212,7 @@ function Home() {
     let t3;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-            className: "text-6xl text-white text-center font-extrabold",
+            className: "text-6xl max-md:text-5xl text-white text-center font-extrabold",
             children: "AI - Asli Ini"
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -220,7 +220,7 @@ function Home() {
             columnNumber: 10
         }, this);
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-            className: "text-4xl text-white text-center font-bold",
+            className: "text-4xl max-md:max-w-sm max-md:text-2xl text-white text-center font-bold",
             children: "Chat AI Santai, Cepat, dan Beneran Ngebantu"
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -228,8 +228,8 @@ function Home() {
             columnNumber: 10
         }, this);
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-xl text-gray-400 text-center max-w-xl",
-            children: "Platform Chatbot AI menggunakan model OpenAi 4o-mini, siap membantu pekerjaan, tugas, atau hanya sekedar ngobrol"
+            className: "text-xl max-md:max-w-sm max-md:text-lg text-gray-400 text-center max-w-xl",
+            children: "Platform Chatbot AI menggunakan model Google Genai Gemini 2.5-flash lite, siap membantu pekerjaan, tugas, atau hanya sekedar ngobrol"
         }, void 0, false, {
             fileName: "[project]/app/page.js",
             lineNumber: 29,
@@ -270,7 +270,7 @@ function Home() {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
             className: "w-screen h-screen bg-gray-950 min-h-75 flex justify-center items-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col justify-center items-center",
+                className: "flex flex-col p-4 justify-center items-center",
                 children: [
                     t1,
                     t2,
@@ -286,19 +286,19 @@ function Home() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaBook"], {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
                                         lineNumber: 47,
-                                        columnNumber: 378
+                                        columnNumber: 382
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.js",
                                 lineNumber: 47,
-                                columnNumber: 245
+                                columnNumber: 249
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 47,
-                        columnNumber: 171
+                        columnNumber: 175
                     }, this)
                 ]
             }, void 0, true, {
@@ -367,7 +367,7 @@ function Home() {
                     className: "max-w-2xl",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-gray-400 text-lg text-center max-lg:max-w-xs",
-                        children: "dirancang untuk bekerja cepat dan efisien. Didukung model OpenAI 4o-mini, AI ini memberikan respons instan langsung dari browser tanpa perlu instalasi. Cocok untuk membantu menyelesaikan berbagai tugas harian dengan lebih cepat dan praktis."
+                        children: "dirancang untuk bekerja cepat dan efisien. Didukung model Google Genai Gemini 2.5-flash lite, AI ini memberikan respons instan langsung dari browser tanpa perlu instalasi. Cocok untuk membantu menyelesaikan berbagai tugas harian dengan lebih cepat dan praktis."
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 68,
@@ -417,7 +417,7 @@ function Home() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-gray-400 max-w-xs",
-                    children: "Jawaban instan karena ditenagai OpenAI 4o-mini — ringan, ngebut, tanpa nunggu lama."
+                    children: "Jawaban instan karena ditenagai Google Genai Gemini 2.5-flash lite — ringan, ngebut, tanpa nunggu lama."
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
                     lineNumber: 75,

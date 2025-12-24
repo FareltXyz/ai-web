@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { FaHome, FaSun, FaMoon } from "react-icons/fa";
 import { FaArrowRightFromBracket, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FiHome, FiUser, FiSettings, FiMenu, FiX } from "react-icons/fi"
+import { signOut } from "next-auth/react";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false)
@@ -45,24 +46,24 @@ export default function Sidebar() {
       >
         {/* Header */}
         <div className="p-6 text-lg font-bold text-white">
-          { theme == "dark" ? "dark" : "light"}
+          AI - Asli Ini
         </div>
 
         {/* Menu */}
         <nav className="flex flex-col space-y-2 px-4">
-          <SidebarItem href="/" icon={<FiHome />} label="Home" />
-          <SidebarItem href="/chat" icon={<FaArrowUpRightFromSquare />} label="New Chat" />
-          <SidebarItem icon={<FaArrowRightFromBracket />} label="Log Out" />
+          <SidebarItem func={() => window.location = "/"}  icon={<FiHome />} label="Home" />
+          <SidebarItem func={() => window.location = "/chat"} icon={<FaArrowUpRightFromSquare />} label="New Chat" />
+          <SidebarItem func={signOut} icon={<FaArrowRightFromBracket />} label="Log Out" />
         </nav>
-        <button onClick={() => { setTheme(theme === "dark" ? "light" : "dark" ) }} className="absolute bottom-0 right-0 mb-6 mr-6 p-8 rounded-full text-white bg-gray-900">{ theme == "dark" ? <FaSun /> : <FaMoon />}</button>
+        <button type="button" onClick={() => { setTheme(theme === "dark" ? "light" : "dark" ) }} className="absolute bottom-0 right-0 mb-6 mr-6 p-8 rounded-full text-white bg-gray-900">{ theme == "dark" ? <FaSun /> : <FaMoon />}</button>
       </aside>
     </>
   )
 }
 
-function SidebarItem({ href, icon, label }) {
+function SidebarItem({ func, icon, label }) {
   return (
-    <div onClick={href? () => {window.location = href } : null} className="flex items-center space-x-3 p-2 rounded-xl text-gray-300 hover:text-white hover:bg-[#1b283f] cursor-pointer transition">
+    <div onClick={func} className="flex items-center space-x-3 p-2 rounded-xl text-gray-300 hover:text-white hover:bg-[#1b283f] cursor-pointer transition">
       <span className="text-lg">{icon}</span>
       <span>{label}</span>
     </div>
