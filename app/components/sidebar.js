@@ -1,12 +1,19 @@
 "use client"
-
-import { useState } from "react"
-import { FaHome } from "react-icons/fa";
+import { useState, useEffect } from "react"
+import { useTheme } from "next-themes";
+import { FaHome, FaSun, FaMoon } from "react-icons/fa";
 import { FaArrowRightFromBracket, FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FiHome, FiUser, FiSettings, FiMenu, FiX } from "react-icons/fi"
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
 
   return (
     <>
@@ -38,7 +45,7 @@ export default function Sidebar() {
       >
         {/* Header */}
         <div className="p-6 text-lg font-bold text-white">
-          AI - Asli Ini
+          { theme == "dark" ? "dark" : "light"}
         </div>
 
         {/* Menu */}
@@ -47,6 +54,7 @@ export default function Sidebar() {
           <SidebarItem href="/chat" icon={<FaArrowUpRightFromSquare />} label="New Chat" />
           <SidebarItem icon={<FaArrowRightFromBracket />} label="Log Out" />
         </nav>
+        <button onClick={() => { setTheme(theme === "dark" ? "light" : "dark" ) }} className="absolute bottom-0 right-0 mb-6 mr-6 p-8 rounded-full text-white bg-gray-900">{ theme == "dark" ? <FaSun /> : <FaMoon />}</button>
       </aside>
     </>
   )
