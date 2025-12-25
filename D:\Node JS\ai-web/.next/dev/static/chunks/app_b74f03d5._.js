@@ -14,25 +14,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Navbar() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
-    if ($[0] !== "e1118e633571d9a0cb805203dc83876410fc6147e93464cbc2f0fd813f11c3d0") {
+    if ($[0] !== "a73d37973210b4c874b8d84b3673a430509a755c0ef4d2d0c886bf7858bbfdd8") {
         for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "e1118e633571d9a0cb805203dc83876410fc6147e93464cbc2f0fd813f11c3d0";
+        $[0] = "a73d37973210b4c874b8d84b3673a430509a755c0ef4d2d0c886bf7858bbfdd8";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
         t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "flex items-center justify-start",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                className: "text-white text-xl font-extrabold pl-5",
+                className: "dark:text-white text-black text-xl font-extrabold pl-5",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     href: "/",
                     children: "AI - Asli Ini"
                 }, void 0, false, {
                     fileName: "[project]/app/components/navbar.js",
                     lineNumber: 13,
-                    columnNumber: 118
+                    columnNumber: 134
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/navbar.js",
@@ -51,15 +51,9 @@ function Navbar() {
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            className: "text-white text-lg hover:underline",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "/chat",
-                children: "Chat"
-            }, void 0, false, {
-                fileName: "[project]/app/components/navbar.js",
-                lineNumber: 20,
-                columnNumber: 65
-            }, this)
+            onClick: _NavbarButtonOnClick,
+            className: "text-black dark:text-white text-lg hover:cursor-pointer hover:underline",
+            children: "Chat"
         }, void 0, false, {
             fileName: "[project]/app/components/navbar.js",
             lineNumber: 20,
@@ -76,14 +70,14 @@ function Navbar() {
             children: [
                 t1,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "text-white text-lg hover:underline",
+                    className: "text-black dark:text-white text-lg hover:underline",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
                         children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/app/components/navbar.js",
                         lineNumber: 27,
-                        columnNumber: 148
+                        columnNumber: 164
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/navbar.js",
@@ -91,12 +85,12 @@ function Navbar() {
                     columnNumber: 93
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "text-white text-lg hover:underline",
+                    className: "text-black dark:text-white text-lg hover:underline",
                     children: "Docs"
                 }, void 0, false, {
                     fileName: "[project]/app/components/navbar.js",
                     lineNumber: 27,
-                    columnNumber: 183
+                    columnNumber: 199
                 }, this)
             ]
         }, void 0, true, {
@@ -120,27 +114,21 @@ function Navbar() {
                         className: "flex gap-4 pr-5 justify-end items-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "text-white text-lg hover:underline",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/login",
-                                    children: "Login"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/navbar.js",
-                                    lineNumber: 34,
-                                    columnNumber: 231
-                                }, this)
+                                onClick: _NavbarButtonOnClick2,
+                                className: "text-black dark:text-white text-lg hover:underline",
+                                children: "Login"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/navbar.js",
                                 lineNumber: 34,
                                 columnNumber: 176
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "text-white text-lg hover:underline",
+                                className: "text-black dark:text-white text-lg hover:underline",
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/navbar.js",
                                 lineNumber: 34,
-                                columnNumber: 272
+                                columnNumber: 293
                             }, this)
                         ]
                     }, void 0, true, {
@@ -162,6 +150,12 @@ function Navbar() {
     return t3;
 }
 _c = Navbar;
+function _NavbarButtonOnClick2() {
+    return window.location = "/login";
+}
+function _NavbarButtonOnClick() {
+    return window.location = "/chat";
+}
 var _c;
 __turbopack_context__.k.register(_c, "Navbar");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -190,11 +184,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Home() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "02f3a0578d3eac7c218ced0b317aa0e2a402cacbb5a195eacdd18d0acc0bcd17") {
+    if ($[0] !== "a9b15952fdd0d36e2e5df994a0b021e6f6873ba046ba8ce5cebfe966559dd780") {
         for(let $i = 0; $i < 13; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "02f3a0578d3eac7c218ced0b317aa0e2a402cacbb5a195eacdd18d0acc0bcd17";
+        $[0] = "a9b15952fdd0d36e2e5df994a0b021e6f6873ba046ba8ce5cebfe966559dd780";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -212,7 +206,7 @@ function Home() {
     let t3;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-            className: "text-6xl max-md:text-5xl text-white text-center font-extrabold",
+            className: "text-6xl max-md:text-5xl text-black dark:text-white text-center font-extrabold",
             children: "AI - Asli Ini"
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -220,7 +214,7 @@ function Home() {
             columnNumber: 10
         }, this);
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-            className: "text-4xl max-md:max-w-sm max-md:text-2xl text-white text-center font-bold",
+            className: "text-4xl max-md:max-w-sm max-md:text-2xl text-black dark:text-white text-center font-bold",
             children: "Chat AI Santai, Cepat, dan Beneran Ngebantu"
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -228,7 +222,7 @@ function Home() {
             columnNumber: 10
         }, this);
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            className: "text-xl max-md:max-w-sm max-md:text-lg text-gray-400 text-center max-w-xl",
+            className: "text-xl max-md:max-w-sm max-md:text-lg text-gray-800 dark:text-gray-400 text-center max-w-xl",
             children: "Platform Chatbot AI menggunakan model Google Genai Gemini 2.5-flash lite, siap membantu pekerjaan, tugas, atau hanya sekedar ngobrol"
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -247,13 +241,13 @@ function Home() {
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
         t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             onClick: _HomeButtonOnClick,
-            className: "flex items-center gap-3 text-white py-3 px-7 bg-slate-800 rounded-4xl hover:underline hover:bg-slate-900",
+            className: "flex items-center gap-3 text-black dark:text-white py-3 px-7 dark:bg-slate-800 bg-neutral-300 hover:bg-slate-300 rounded-4xl hover:underline dark:hover:bg-slate-900",
             children: [
                 "Get Started ",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaArrowUpRightFromSquare"], {}, void 0, false, {
                     fileName: "[project]/app/page.js",
                     lineNumber: 40,
-                    columnNumber: 176
+                    columnNumber: 236
                 }, this)
             ]
         }, void 0, true, {
@@ -268,7 +262,7 @@ function Home() {
     let t5;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
         t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-            className: "w-screen h-screen bg-gray-950 min-h-75 flex justify-center items-center",
+            className: "w-screen h-screen bg-gray-50 dark:bg-gray-950 min-h-75 flex justify-center items-center",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-col p-4 justify-center items-center",
                 children: [
@@ -280,31 +274,31 @@ function Home() {
                         children: [
                             t4,
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "flex items-center gap-3 text-white bo py-3 px-7 bg-slate-800 rounded-4xl hover:underline hover:bg-slate-900",
+                                className: "flex items-center gap-3 text-black dark:text-white bo py-3 px-7 dark:bg-slate-800 bg-neutral-300 rounded-4xl hover:underline hover:bg-slate-300 dark:hover:bg-slate-900",
                                 children: [
                                     "Docs ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaBook"], {}, void 0, false, {
                                         fileName: "[project]/app/page.js",
                                         lineNumber: 47,
-                                        columnNumber: 382
+                                        columnNumber: 458
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/page.js",
                                 lineNumber: 47,
-                                columnNumber: 249
+                                columnNumber: 265
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 47,
-                        columnNumber: 175
+                        columnNumber: 191
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 47,
-                columnNumber: 100
+                columnNumber: 116
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -331,7 +325,7 @@ function Home() {
     let t7;
     if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "",
+            className: "dark:text-white text-black",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-6xl font-extrabold text-center max-md:text-3xl",
                 children: [
@@ -339,14 +333,14 @@ function Home() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 61,
-                        columnNumber: 110
+                        columnNumber: 136
                     }, this),
                     " Ai - Asli Ini"
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.js",
                 lineNumber: 61,
-                columnNumber: 28
+                columnNumber: 54
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/page.js",
@@ -366,7 +360,7 @@ function Home() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-2xl",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-400 text-lg text-center max-lg:max-w-xs",
+                        className: "dark:text-gray-400 text-gray-800 text-lg text-center max-lg:max-w-xs",
                         children: "dirancang untuk bekerja cepat dan efisien. Didukung model Google Genai Gemini 2.5-flash lite, AI ini memberikan respons instan langsung dari browser tanpa perlu instalasi. Cocok untuk membantu menyelesaikan berbagai tugas harian dengan lebih cepat dan praktis."
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
@@ -394,13 +388,13 @@ function Home() {
             className: "flex flex-col items-start justify-start gap-4 h-48",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-slate-900 p-3 rounded-md",
+                    className: "bg-neutral-300 dark:bg-slate-900 p-3 rounded-md",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaRegClock"], {
-                        className: "text-xl "
+                        className: "text-xl text-black dark:text-white"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 75,
-                        columnNumber: 123
+                        columnNumber: 143
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
@@ -408,20 +402,20 @@ function Home() {
                     columnNumber: 78
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-white text-2xl font-bold",
+                    className: "dark:text-white text-black text-2xl font-bold",
                     children: " Cepat & Responsif"
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
                     lineNumber: 75,
-                    columnNumber: 164
+                    columnNumber: 210
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-gray-400 max-w-xs",
+                    className: "dark:text-gray-400 text-black max-w-xs",
                     children: "Jawaban instan karena ditenagai Google Genai Gemini 2.5-flash lite — ringan, ngebut, tanpa nunggu lama."
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
                     lineNumber: 75,
-                    columnNumber: 235
+                    columnNumber: 297
                 }, this)
             ]
         }, void 0, true, {
@@ -439,13 +433,13 @@ function Home() {
             className: "flex flex-col items-start justify-start gap-4 h-48",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-slate-900 p-3 rounded-md",
+                    className: "bg-neutral-300 dark:bg-slate-900 p-3 rounded-md",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaDisplay"], {
-                        className: "text-xl "
+                        className: "text-xl text-black dark:text-white"
                     }, void 0, false, {
                         fileName: "[project]/app/page.js",
                         lineNumber: 82,
-                        columnNumber: 124
+                        columnNumber: 144
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
@@ -453,20 +447,20 @@ function Home() {
                     columnNumber: 79
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-white text-2xl font-bold",
+                    className: "dark:text-white text-black text-2xl font-bold",
                     children: " Berbasis Web"
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
                     lineNumber: 82,
-                    columnNumber: 164
+                    columnNumber: 210
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-gray-400 max-w-xs",
+                    className: "dark:text-gray-400 text-black max-w-xs",
                     children: "Langsung pakai lewat browser, tanpa install aplikasi tambahan. dan pasti nya gratis"
                 }, void 0, false, {
                     fileName: "[project]/app/page.js",
                     lineNumber: 82,
-                    columnNumber: 226
+                    columnNumber: 288
                 }, this)
             ]
         }, void 0, true, {
@@ -485,7 +479,7 @@ function Home() {
                 t0,
                 t5,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                    className: "w-screen lg:h-screen bg-gray-950 min-h-75 flex flex-col gap-10 items-center justify-center",
+                    className: "w-screen lg:h-screen bg-gray-50 dark:bg-gray-950 min-h-75 flex flex-col gap-10 items-center justify-center",
                     children: [
                         t6,
                         t8,
@@ -498,53 +492,53 @@ function Home() {
                                     className: "flex flex-col items-start justify-start gap-4 h-48",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-slate-900 p-3 rounded-md",
+                                            className: "bg-neutral-300 dark:bg-slate-900 p-3 rounded-md",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa6$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaFilePen"], {
-                                                className: "text-xl "
+                                                className: "text-xl text-black dark:text-white"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.js",
                                                 lineNumber: 89,
-                                                columnNumber: 349
+                                                columnNumber: 385
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.js",
                                             lineNumber: 89,
-                                            columnNumber: 304
+                                            columnNumber: 320
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-white text-2xl font-boldgit",
+                                            className: "dark:text-white text-black text-2xl font-bold",
                                             children: " Membantu Pekerjaan"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.js",
                                             lineNumber: 89,
-                                            columnNumber: 389
+                                            columnNumber: 451
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-400 max-w-xs",
+                                            className: "dark:text-gray-400 text-black max-w-xs",
                                             children: "Membantu menyelesaikan pekerjaan dengan lebih cepat melalui jawaban instan dan solusi yang langsung ke inti."
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.js",
                                             lineNumber: 89,
-                                            columnNumber: 460
+                                            columnNumber: 535
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.js",
                                     lineNumber: 89,
-                                    columnNumber: 236
+                                    columnNumber: 252
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.js",
                             lineNumber: 89,
-                            columnNumber: 141
+                            columnNumber: 157
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "border-b w-2/4 z-10 border-gray-400 mt-20"
                         }, void 0, false, {
                             fileName: "[project]/app/page.js",
                             lineNumber: 89,
-                            columnNumber: 622
+                            columnNumber: 713
                         }, this)
                     ]
                 }, void 0, true, {

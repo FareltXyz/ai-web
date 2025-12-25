@@ -38,14 +38,14 @@ export default function Sidebar() {
       <aside
         className={`
           relative max-md:absolute shrink-0 top-0 left-0 z-50 h-screen w-64
-          bg-slate-950 border-r border-white/10
+          bg-gray-50 dark:bg-slate-950 border-r border-white/10
           transform transition-transform duration-300
           ${open ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0
         `}
       >
         {/* Header */}
-        <div className="p-6 text-lg font-bold text-white">
+        <div className="p-6 text-lg font-bold text-black dark:text-white">
           AI - Asli Ini
         </div>
 
@@ -55,7 +55,7 @@ export default function Sidebar() {
           <SidebarItem func={() => window.location = "/chat"} icon={<FaArrowUpRightFromSquare />} label="New Chat" />
           <SidebarItem func={signOut} icon={<FaArrowRightFromBracket />} label="Log Out" />
         </nav>
-        <button type="button" onClick={() => { setTheme(theme === "dark" ? "light" : "dark" ) }} className="absolute bottom-0 right-0 mb-6 mr-6 p-8 rounded-full text-white bg-gray-900">{ theme == "dark" ? <FaSun /> : <FaMoon />}</button>
+        <button type="button" onClick={() => { setTheme(theme === "dark" ? "light" : "dark" ) }} className="absolute bottom-0 right-0 mb-6 mr-6 p-8 rounded-full dark:text-white text-black dark:bg-gray-900 bg-gray-200">{ theme == "dark" ? <FaSun /> : <FaMoon />}</button>
       </aside>
     </>
   )
@@ -63,7 +63,7 @@ export default function Sidebar() {
 
 function SidebarItem({ func, icon, label }) {
   return (
-    <div onClick={func} className="flex items-center space-x-3 p-2 rounded-xl text-gray-300 hover:text-white hover:bg-[#1b283f] cursor-pointer transition">
+    <div onClick={func} className="flex items-center space-x-3 p-2 rounded-xl text-gray-700 dark:text-gray-300  hover:dark:text-white hover:text-black  hover:dark:bg-[#1b283f] hover:bg-gray-200 cursor-pointer transition">
       <span className="text-lg">{icon}</span>
       <span>{label}</span>
     </div>
