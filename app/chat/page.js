@@ -26,7 +26,6 @@ export default function Chat() {
     let { data: session, status } = useSession()
     const [ messages, setMessages ] = useState([]);
     const [ mounted, setMounted ] = useState(false)
-    console.log(messages)
     useEffect(() => {
         setMounted(true)
         if(status == "unauthenticated") {
@@ -40,17 +39,21 @@ export default function Chat() {
     async function generate(e) {
         e.preventDefault()
         const prompt = e.target.prompt.value
-        
+        if (!prompt) return
+
+        const userMessage = { role: "user", text: prompt };
+        const contentMessage = [...messages, userMessage ]
+
         setMessages(prev => [
             ...prev,
-            { role: "user", text: prompt },
+            userMessage,
             { role: "ai", text: "", isThinking: true}
         ])
         
         const res = await fetch("/api/fetch", {
             method: "POST",
             body: JSON.stringify({
-                prompt
+                contentMessage
             })
         })
         let result = '';
@@ -62,7 +65,6 @@ export default function Chat() {
             if (done) break
             
             result += decoder.decode(value, {stream: true})
-            console.log(result)
             setMessages(prev => {
                 const updated = [...prev]
                 updated[updated.length -1] = {
@@ -118,7 +120,7 @@ export default function Chat() {
                                                         )
                                                          :
                                                         (
-                                                            <p className="bg-gray-300 max-w-5 whitespace-pre-wrap dark:bg-gray-600/50 p-4 rounded-lg text-start self-end">
+                                                            <p className="bg-gray-300 whitespace-pre-wrap dark:bg-gray-600/50 p-4 rounded-lg text-start self-end">
                                                                 {msg.text}
                                                             </p>
                                                         )

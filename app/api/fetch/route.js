@@ -3,7 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { prompt } = body;
+    const  prompt  = body;
 
     if (!prompt) {
       return Response.json(
@@ -15,19 +15,15 @@ export async function POST(req) {
     const ai = new GoogleGenAI({
       apiKey: process.env.GEMINI_API,
     });
-
     const result = await ai.models.generateContentStream({
       model: "gemini-2.5-flash-lite",
-      contents: [
-        {
-          role: "user",
-          parts: [{ text: prompt }],
-        },
-      ],
+      contents: prompt.contentMessage,
       config: {
         systemInstruction: "Kamu adalah AI yang ramah, santai, dan membantu. Persingkat kata-kata dan hindari kata-kata yang berlebihan. Gunakan emoji secara natural (2–5 emoji per pesan).Hindari emoji berlebihan atau tidak relevan.",
       },
     });
+    
+
     const encoder = new TextEncoder()
     return new Response(
         new ReadableStream({
